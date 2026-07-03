@@ -133,12 +133,13 @@ int main(){
         }else if(choice >= 2 && choice <= 6){
             operation[choice-2](students, count);
         }else if (choice == 7){
-            free_memory(students);
             break;
         }else{
             printf("Invalid choice\n");
         }
     }
+
+    free_memory(students);
 
     return 0;
 }
